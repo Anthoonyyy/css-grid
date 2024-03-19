@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+h1{
+    text-align: center;
+}
+#global{
+    display: grid;
+    grid-template-columns: 100px 60% auto;
+    grid-template-rows: 100px auto;
+    text-align: center;
+    
+}
+
+header{
+    background-color: paleturquoise;
+    
+}
+
+nav{
+    background-color: palegreen;
+}
+
+main{
+    background-color: palegoldenrod;
+}
+
+aside{
+    background-color: palevioletred;
+}
+
+footer{
+    background-color: rgb(220, 120, 220);
+}
