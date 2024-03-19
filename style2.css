@@ -27,8 +27,11 @@ nav{
     background-color: palegreen;
     grid-column-start : 1; 
     grid-column-end : 2;
+    /*équivalent de grid-column:1/2*/
+
     grid-row-start : 2; 
     grid-row-end : 3;
+    /*éqquivalent de grid-row: 2/3*/
    
 }
 
@@ -37,19 +40,17 @@ main{
     align-items: center;
     justify-content: center;
     background-color: palegoldenrod;
-    grid-column-start : 2; 
-    grid-column-end : 3;
-    grid-row-start : 2; 
-    grid-row-end : 3;
+    grid-column: 2/3; 
+    grid-row : 2/3; 
+    
     
 }
 
 aside{
     background-color: palevioletred;
-    grid-column-start : 3; 
-    grid-column-end : 4;
-    grid-row-start : 2; 
-    grid-row-end : 3;
+    grid-column : 3/4; 
+    grid-row : 2/3; 
+    
    
 }
 aside img{
@@ -60,8 +61,7 @@ aside img{
 
 footer{
     background-color: rgb(220, 120, 220);
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    
 }
