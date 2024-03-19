@@ -10,7 +10,8 @@ h1{
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 100px auto 100px;
     text-align: center;
-    
+    row-gap: 2px;
+    column-gap: 5px;
 }
 
 header{
@@ -49,8 +50,12 @@ aside{
     grid-column-end : 4;
     grid-row-start : 2; 
     grid-row-end : 3;
-    
    
+}
+aside img{
+    width: 100%;
+    height: auto;
+    padding: 3px;
 }
 
 footer{
