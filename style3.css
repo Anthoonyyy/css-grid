@@ -13,26 +13,21 @@ h1{
     row-gap: 5px;
     column-gap: 5px;
     /*équivaut à gap : 5px 5px;*/
+    grid-template-areas: 
+    "entete entete entete"
+    "menu principal photo"
+    "pieddepage pieddepage pieddepage";
 }
 
 header{
     background-color: paleturquoise;
-    grid-column-start : 1; 
-    grid-column-end : 4;
-    grid-row-start : 1; 
-    grid-row-end : 2;
+   grid-area: entete;
    
 }
 
 nav{
     background-color: palegreen;
-    grid-column-start : 1; 
-    grid-column-end : 2;
-    /*équivalent de grid-column:1/2*/
-
-    grid-row-start : 2; 
-    grid-row-end : 3;
-    /*éqquivalent de grid-row: 2/3*/
+   grid-area: menu;
    
 }
 
@@ -41,17 +36,14 @@ main{
     align-items: center;
     justify-content: center;
     background-color: palegoldenrod;
-    grid-column: 2/3; 
-    grid-row : 2/3; 
+   grid-area: principal;
     
     
 }
 
 aside{
     background-color: palevioletred;
-    grid-column : 3/4; 
-    grid-row : 2/3; 
-    
+  grid-area: photo;
    
 }
 aside img{
@@ -62,7 +54,6 @@ aside img{
 
 footer{
     background-color: rgb(220, 120, 220);
-    grid-column: 1/4;
-    grid-row: 3/4;
+    grid-area: pieddepage;
     
 }
