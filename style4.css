@@ -18,8 +18,7 @@ h1{
      de la grille par rapport au conteneur*/
     justify-content: space-around;
     align-content: start;
-    gap: 3
-    px;
+    gap: 3px;
     grid-auto-columns: 130px;
     grid-auto-flow: column;
 }
