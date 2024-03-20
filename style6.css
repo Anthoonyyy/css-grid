@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1em;
+    grid-auto-flow:  row sparse; /*ou dense à la place de sparse. Dense comblera les trous en cas de vide comparé à sparse*/
+    justify-content: center;
+}
+
+article{
+    background: linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    padding: 50px 100px;
+
+}
+
+.en-avant{
+    grid-column: 1/ span 2;
+}
