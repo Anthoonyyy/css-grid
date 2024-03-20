@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+}
+
+#galerie{
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-template-rows: repeat(3,130px);
+    /*Les propriétés suivantes (-items) indiquent l'alignement des contenus par rapport
+    à leurs cellules*/
+    justify-items: stretch;
+    align-items: stretch;
+    /*Les propriétés suivantes (-content) indiquent l'alignement de l'ensemble
+     de la grille par rapport au conteneur*/
+    justify-content: space-around;
+    align-content: center;
+    row-gap: 20px;
+    
+}
+
+/*Les propriétées (-self) indiquent l'alignement d'un élément différent des autres*/
+/*/#galerie img:nth-child(5){
+    justify-self: start;
+    align-self: stretch;
+}*/
+
+
+#galerie img:nth-child(5){
+    order:-1;
+}
+
