@@ -3,8 +3,8 @@ h1{
 }
 
 #galerie{
-    width: 600px;
-    height: 450px;
+    width: fit-content;
+    height: auto;
     margin: 0 auto;
     border: 3px solid black;
     display: grid;
@@ -17,9 +17,11 @@ h1{
     /*Les propriétés suivantes (-content) indiquent l'alignement de l'ensemble
      de la grille par rapport au conteneur*/
     justify-content: space-around;
-    align-content: center;
-    row-gap: 20px;
-    
+    align-content: start;
+    gap: 3
+    px;
+    grid-auto-columns: 130px;
+    grid-auto-flow: column;
 }
 
 /*Les propriétées (-self) indiquent l'alignement d'un élément différent des autres*/
@@ -27,9 +29,4 @@ h1{
     justify-self: start;
     align-self: stretch;
 }*/
-
-
-#galerie img:nth-child(5){
-    order:-1;
-}
 
